@@ -3,7 +3,7 @@ sentinel
 
 a curing system by a bad coder
 
-Missing lines:
+missing lines:
 ==============
 
 Aquachemantics: def lines
