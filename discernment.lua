@@ -6,7 +6,6 @@ trigs.defs = trigs.defs or {}
 
 trigs.combat.discernment = {}
 
-
 trigs.defs.discernment = {
   { id = "nightsight",
       line = "^Your vision sharpens with light as you gain night sight%.$",
