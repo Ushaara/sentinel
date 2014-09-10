@@ -1,2 +1,63 @@
 -- discernment
 
+trigs = trigs or {}
+trigs.combat = trigs.combat or {}
+trigs.defs = trigs.defs or {}
+
+trigs.combat.discernment = {}
+
+
+trigs.defs.discernment = {
+  { id = "nightsight",
+      line = "^Your vision sharpens with light as you gain night sight%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "nightsight" },
+  { id = "nightsight_up",
+      line = "^Your eyes are already attuned to the shadows of night%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "nightsight up" },
+  { id = "nightsight_def",
+      line = "^Your vision is heightened to see in the dark%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "nightsight def" },
+  { id = "deathsense",
+      line = "^You shut your eyes and concentrate on the end of life%. A moment later%, you feel inextricably linked with the strings of fate%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "deathsense" },
+  { id = "deathsense_up",
+      line = "^Your mind is already linked to the strings of fate%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "deathsense_up" },
+  { id = "deathsense_def",
+      line = "^Your mind is sensing the death of others%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "deathsense def" },
+  { id = "thirdeye",
+      line = "^You now possess the gift of the third eye%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "thirdeye" },
+  { id = "thirdeye_def",
+      line = "^You are viewing the world through the third eye%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "def line" },
+  { id = "thirdeye_up",
+      line = "^You already possess the thirdeye%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "thirdeye_up" },
+  { id = "observe",
+      line = "^You pause a moment to observe the surrounding area%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "observe" },
+  { id = "observing",
+      line = "^You your (%a+) you see%:$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "observing" },
+  { id = "secrets",
+      line = "^You sweep your trained eye across the room for the hidden exits%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "assume this is stupidity if not in last commands" },
+  { id = "nosecrets",
+      line = "^You spot no hidden exits%.$",
+      action = function (i, tbl) discernment_(i, tbl) end,
+      notes = "no secrets" },
+}
