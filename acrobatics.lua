@@ -1,6 +1,6 @@
 -- acrobatics
 
-trigs = trigs or {}
+trigs = trigs or {
 trigs.combat = trigs.combat or {}
 trigs.defs = trigs.defs or {}
 
@@ -201,4 +201,5 @@ trigs.defs.acrobatics = {
       line = "^You expertly spring to the (%a+) leaping over all obstacles in your path%.$",
       action = function (i, tbl) acrobatics_(i, tbl) end,
       notes = "handspring" },
+}
 }
