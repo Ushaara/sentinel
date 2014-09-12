@@ -98,3 +98,5 @@ trigs.combat.aquamancy = {
       action = function (i, tbl) aquamancy_(i, tbl) end,
       notes = "ouch" }
 }
+
+trigs.defs.aquamancy = {}
