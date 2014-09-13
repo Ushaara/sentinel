@@ -1,8 +1,8 @@
 -- aerochemantics
 
 trigs = trigs or {}
-trigs.combat = trigs or {}
-trigs.defs = trigs or {}
+trigs.combat = trigs.combat or {}
+trigs.defs = trigs.defs or {}
 
 trigs.combat.aerochemantics = {
   { id = "stratus",
