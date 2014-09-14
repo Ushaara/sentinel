@@ -1,0 +1,48 @@
+-- tracking
+
+trigs = trigs or {}
+trigs.combat = trigs.combat or {}
+trigs.defs = trigs.defs or {}
+
+trigs.combat.tracking = {
+  { id = "bond_attack",
+      line = "^A .- leaps at you%, biting down into your flesh and gnawing on you painfully%.$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "damage + bleeding" },
+  { id = "trap",
+      line = "^You spring a trap%!%!$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "derp derp" },
+  { id = "stinktrap",
+      line = "^A yellow cloud explodes in your face and the stinking smoke makes you cough violently%.$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "off balance" },
+  { id = "legsnare",
+      line = "^A clamp snaps shut on your foot%, pinning you to the ground%.$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "entangled" },
+  { id = "springtrap",
+      line = "^You step on a concealed plate%, which springs up and tosses you violently out of the room%.$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "noo, springtrapped!" },
+  { id = "deadfall",
+      line = "^A small anvil drops down%, cracking painfully against your skull%.$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "concussion" },
+  { id = "pit",
+      line = "^The ground suddenly falls away from beneath you and you go tumbling into a pit%, landing painfully on the hard ground%.$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "derp, you fell into a pit" },
+  { id = "clamp",
+      line = "^Pain sears through your (%a+) arm as .- leaps up and clamps its powerful jaws around it%.$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "clamped" },
+  { id = "darts",
+      line = "^A dart streaks from out of nowhere and slams into you%.$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "dart traps" },
+  { id = "spikepit",
+      line = "^The ground suddenly falls away from beneath you and you go tumbling into a pit%. Before you hit the bottom%, you are skewered upon some spikes%!$",
+      action = function (i, tbl) tracking_(i, tbl) end,
+      notes = "pitted + poisoned" },
+}
