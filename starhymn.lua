@@ -68,8 +68,4 @@ trigs.combat.starhymn = {
 }
 
 trigs.defs.starhymn = {
-  { id = "celestode", 
-      line = "^The music here inspires you to greater heights%.$", 
-      action = function (i, tbl) starhymn_(i, tbl) end, 
-      notes = "celest ode" },
 }
