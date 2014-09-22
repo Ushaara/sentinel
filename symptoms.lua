@@ -61,4 +61,8 @@ trigs.combat.symptoms = {
       line = "^Your mind wanders as you dream of riches and fame%.$",
       action = function (i, tbl) symptoms_(i, tbl) end,
       notes = "daydreaming" },
+  { id = "haemophilia",
+      line = "^Your blood refuses to clot%.$",
+      action = function (i, tbl) symptoms_(i, tbl) end,
+      notes = "must have tried to clot" },
 }
