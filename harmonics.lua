@@ -152,8 +152,12 @@ trigs.defs.harmonics = {
       line = "^As the sparkling motes settle upon your skin%, you shiver as a powerful healing balm washes over you%.$",
       action = function (i, tbl) harmonics_(i, tbl) end,
       notes = "cure line" },
-  { id = "emerald",
+  { id = "emerald_passivecure",
       line = "^The spinning emerald around (%a+) suffuses you with a deep green glow%.$",
       action = function (i, tbl) harmonics_(i, tbl) end,
       notes = "passive cure" },
+  { id = "emerald_passivecure",
+      line = "^Your spinning emerald suffuses you with a deep green glow%.$",
+      action = function (i, tbl) harmonics_(i, tbl) end,
+      notes = "own emerald, passive cure" },
 }
