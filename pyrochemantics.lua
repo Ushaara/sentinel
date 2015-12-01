@@ -136,4 +136,8 @@ trigs.defs.pyrochemantics = {
       line = "^You hold a bit of fiery essence up to your nostrils and inhale deeply%, snorting it until nothing remains%. Flicking a fused quartz flask free%, you hold it up to your mouth and blow (%a+) wisps of incendiary reagent into it%.$",
       action = function (i, tbl) pyrochemantics_(i, tbl) end,
       notes = "1 fire essence" },
+  { id = "pyroaugmentorius",
+      line = "^You take a swig from one of your fused flasks and revel in the hot incendiary reagent%. As the gaseous liquid roils around in your insides you begin to work and pull at a series of golden bars%, twisting them into a long%, strange shape%. Bending it this way%, you find the gold will not give further and exhale a bit%, blowing blazing trickles of incendiary%-infused fire on the gold%. Quickly it softens and gives way%, allowing you to twist it further%. You work the gadget so that golden twists and bars connect a series of semi%-circular rings to form the majority of the piece%, though in some places esoteric swirls and twists move with varying degrees of ease as they catch the wind%. Exhaling the remainder of the incendiary reagent%, you pull the churning cloud of gaseous fire out with your fingertips and blow softly on it%, willing it to cool%. Glittering beads %- glowing thrice as bright as the most radiant firegem yet a third the size %- hang in the air before you%, and you quickly affix them into your now complete pyroaugmentorius%. Rigging it to your neck%, you feel the intrinsic elemental bonds set in%, the reagent%-infused gold night inseparable from the skin%, now%.$"
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "1/8 fire buff },
 }
