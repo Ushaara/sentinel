@@ -128,4 +128,12 @@ trigs.defs.pyrochemantics = {
       line = "^You are proofed against fire%.$",
       action = function (i, tbl) pyrochemantics_(i, tbl) end,
       notes = "def line" },
+  { id = "fusedflasks_create",
+      line = "^You inhale deeply%, contemplating the raw energy of the Elemental Plane of Fire%. Pursing your lips together you exhale%, your breath becoming a white%-hot stream of fire%. Passing your scathing breath over numerous bars of gold$, you melt them down into liquid and pull it up into the air$. Concentrating%, still exhaling%, you manipulate the matter with arcane energy%, willing them together%. Inhaling once more%, you breathe a thick cloud of rainbowed smoke onto the molten gold$, willing it until they settle into a series of fused flasks%, each composed of gold%-flecked quartz%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "created flasks" },
+  { id = "fusedflasks_transmute",
+      line = "^You hold a bit of fiery essence up to your nostrils and inhale deeply%, snorting it until nothing remains%. Flicking a fused quartz flask free%, you hold it up to your mouth and blow (%a+) wisps of incendiary reagent into it%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "1 fire essence" },
 }
