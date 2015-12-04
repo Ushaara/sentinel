@@ -57,6 +57,10 @@ trigs.combat.elementalism = {
 }
 
 trigs.defs.elementalism = {
+  { id = "blast",
+      line = "^You make a fist and punch towards (.-)%, releasing a blast of pure elemental energy that slams into [hH]%a+%, searing [hH]%a+ flesh%.$",
+      action = function (i, tbl) elementalism_(i, tbl) end,
+      notes = "fire damage" },
   { id = "levitate",
       line = "^You take a deep breath and fill your cheeks with air until they bulge out%. After a moment%, the air in your cheeks disappears and is absorbed into you%.$",
       action = function (i, tbl) elementalism_(i, tbl) end,
