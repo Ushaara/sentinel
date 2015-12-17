@@ -192,4 +192,12 @@ trigs.defs.pyrochemantics = {
       line = "^You take a pull from one of your fused flasks%, reveling in the wild intoxication as you release%. Rings of smoke curl from your nostrils as you begin to sweat profusely%, the world swirling and churning in multihued colours before your eyes%. The high rolls through your mind as an incendiary effluvium begins to seep from your pores%.$",
       action = function (i, tbl) pyrochemantics_(i, tbl) end,
       notes = "fire damage on tick" },
+  { id = "rig_pyrocannon",
+      line = "^You rub some of the incendiary reagent from a fused quartz flask onto your hands before working a series of golden bars%, easily bending and twisting them into hoses%, braces%, and supports%. You douse your hands in opiate reagent%, rubbing bars of gold and working the gaseous liquid into their surface before smoothing and thinning them out into long%, curved sheets%. Exhaling softly onto the metal you seal the spaces between several sheets%, crafting a broad bell%. Trickling narcotic reagent over the construct%, you begin to rub it into the numerous pieces and work them together into a greater whole%, rigging together an explosive pyrocannon%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "fire asphyx cannon" },
+  { id = "pyrocannon_fire", 
+      line = "^You steady your pyrocannon%, aim%, and fire%, unleashing a powerful blast of hot air and raging flames at (.*)%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "fire asphyx damage" },
 }
