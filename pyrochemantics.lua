@@ -200,4 +200,12 @@ trigs.defs.pyrochemantics = {
       line = "^You steady your pyrocannon%, aim%, and fire%, unleashing a powerful blast of hot air and raging flames at (.*)%.$",
       action = function (i, tbl) pyrochemantics_(i, tbl) end,
       notes = "fire asphyx damage" },
+  { id = "hallucinatory_smoke",
+      line = "^You pop the top of a fused flask of gold%-flecked quartz and quickly down some of its contents%, capping it and opening another%. Downing some of the contents of this flask%, you close your eyes and shake your head%. Yes%, there it is %- the intoxicating high%, the rolling waves of pleasure that wipe away a pain that is rapidly becoming a distant%, hazy memory%. Turning your head this way and that%, you roll your neck%, thoroughly enjoying the mixture of euphoria and calmness that takes over your mind%. Finally you open your mouth%, exhaling soft%, incandescent and variegated tongues of fire that curl about your lips and nostrils%. The flames fade away slowly as you finish your exhalation%, the last of vestiges of air in your lungs coming forth as a glittering cloud of hazy%, purple smoke%. Running your fingertips through the cloud%, you pull it about you%, the purpled%, smoke hazy hanging about your comfortably%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "hallucinations reactive" },
+  { id = "hallucinatory_smoke_def",
+      line = "^You are surrounded by a haze of hallucinatory smoke for another (%d+) months%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "def line" },
 }
