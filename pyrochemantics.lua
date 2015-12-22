@@ -208,4 +208,12 @@ trigs.defs.pyrochemantics = {
       line = "^You are surrounded by a haze of hallucinatory smoke for another (%d+) months%.$",
       action = function (i, tbl) pyrochemantics_(i, tbl) end,
       notes = "def line" },
+  { id = "rig_goggles",
+      line = "^You rub a series of reagents into your palms and work a collection of gold bars into an assortment of plates and curved frame sections%. Using the last of the gold you pull it out until it is as thin as a sheet of paper%, rubbing your reagent%-coated thumb on it until it turns translucent%. Rigging all the pieces together%, you create a pair of goggles which you promptly strap on to your head%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "see through exit obscuring things" },
+  { id = "goggles_def",
+      line = "^You have haze%-piercing goggles for another (%d+) months%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "def line" },
 }
