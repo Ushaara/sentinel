@@ -240,4 +240,12 @@ trigs.defs.pyrochemantics = {
       line = "^You are surrounded by a haze of fevered smoke for another (%d+) months%.$",
       action = function (i, tbl) pyrochemantics_(i, tbl) end,
       notes = "def line" },
+  { id = "emberdance_cast",
+      line = "^You take a sip from each of your flasks%, taking in much of each reagent%. Letting the intoxication fill you completely%, you allow your eyelids to flutter before gazing out at an altered world%. Wild and dancing%, countless little embers in the shape of butterflies dance in frenetic abandon about you%, entirely care free%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes = "periodic ablaze to enemies" },
+  { id = "pyroworkstatus_emberdance",
+      line = "^A swarm of embers dance around you for another (%d+) minutes%.$",
+      action = function (i, tbl) pyrochemantics_(i, tbl) end,
+      notes "pyrowork status line" },
 }
