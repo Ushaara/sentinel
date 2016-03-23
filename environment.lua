@@ -29,6 +29,10 @@ trigs.combat.environment = {
       line = "^You see (%a+) say something%, but [hH]%a+ voice is drowned out by the wind%.$",
       action = function (i, tbl) environment_(i, tbl) end,
       notes = "wind drowned out their voice" },
+  { id = "kigaru_wind",
+      line = "^A heavy force pressed down upon you%, slowing your every movement%.$",
+      action = function (i, tbl) environment_(i, tbl) end,
+      notes = "choke effect" },
 }
 
 trigs.defs.environment = {
