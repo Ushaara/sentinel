@@ -105,6 +105,10 @@ trigs.combat.pyromancy = {
       line = "^The burning pyres of incandescent fire suddenly erupt and coalesce into a roaring inferno%. The inferno twists like a white hot tornado and you scream as it engulfs you%, searing the flesh from your bones%.$",
       action = function (i, tbl) pyromancy_(i, tbl) end,
       notes = "ouch ouch ouch" },
+  { id = "burns",
+      line = "^Your flesh is charred%, and you receive (%a+) degree burns%.$",
+      action = function (i, tbl) pyromancy_(i, tbl) end,
+      notes = "pull burn levels" },
 }
 
 trigs.defs.pyromancy = {
